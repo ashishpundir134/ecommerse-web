@@ -1,0 +1,29 @@
+.category {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .category {
+    align-items: center;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+    }
+  }
+}
